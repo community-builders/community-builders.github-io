@@ -1,0 +1,36 @@
+---
+const cards = [
+  {
+    title: 'LEARN & COLLABORATE',
+    image: "/assets/badge_v2/dev_com_badge_logo.png",
+    body: 'Learn about Web3 and blockchain technology while contributing to the development of the creator ecosystem with the members of the Dev.',
+    darkModeInvertColor: true
+  },
+  {
+    title: 'LEAD & ORGANIZE',
+    image: "/assets/badge_v2/dev_com_badge_logo.png",
+    body:'Lead and Organize your event or creating contents that will be useful to expand the Dev Protocol community.',
+    darkModeInvertColor: true
+  },
+  {
+    title: 'EARN SWAG & DEV TOKENS',
+    image: "/assets/badge_v2/dev_com_badge_logo.png",
+    body: 'You will be awarded based on your contributions. The more you contribute, the higher the opportunity you will be awarded.',
+    
+    darkModeInvertColor: true
+  },
+]
+---
+
+<section class="p-5 my-6 md:-mt-24">
+  <h3 class="font-black font-display text-3xl text-center">WHY YOU SHOULD JOIN</h3>
+  <div class="grid grid-cols-3 gap-6 flex-wrap justify-evenly py-6 items-center">
+    {cards.map(card => (
+        <div class="space-y-4 col-span-3 md:col-span-1 flex flex-col items-center content-between text-center">
+        <img alt='community-builders' src={card.image} class={`w-12 h-auto filter`} />
+        <h3 class="font-semibold text-lg">{card.title}</h3>
+        <p>{card.body}</p>
+      </div>
+    ))}
+  </div>
+</section>

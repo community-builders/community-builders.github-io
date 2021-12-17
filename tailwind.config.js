@@ -7,7 +7,8 @@ module.exports = {
       colors: {
         darkPrimary: '#111827',
         darkSecondary: '#1E3A8A',
-        darkThird: '#1F2937'
+        darkThird: '#1F2937',
+        lightPink: '#ED6A90'
       },
       fontFamily: {
         mono: ['IBM Plex Mono', 'monospace'],
@@ -19,7 +20,7 @@ module.exports = {
         half: '50%'
       },
       screens: {
-        'burger': '800px'
+        burger: '800px'
       }
     }
   },

@@ -1,0 +1,47 @@
+---
+const questions = [
+  {
+    question: "Who is eligible to apply?",
+    answer:'Everyone is welcome to apply, but you need to qualified with the roles provided.'
+  },
+  {
+    question: "What can I do to get benefits?",
+    answer:'The benefits you can get is depends on your rank. It can be $DEV, get along with our partners project, and builders swag.'
+  },
+  {
+    question: "What are the roles?",
+    answer:'We have provided three roles for Developers, Marketing, Technical Content Writers.'
+  },
+  {
+    question: "How much time do I need to commit?",
+    answer:'The program is flexible, it\'s up in your free time but the more you invest your time in Dev Protocol, the more opportunity you can get.'
+  },
+  {
+    question: "When the applications open?",
+    answer:'Application to the program is open from December 20th to January 20th. The application remains open for a month and you can apply once every application cycle opens.'
+  },
+
+]
+---
+<section
+  class="
+    p-5 my-6 md:-mt-10
+  "
+>
+  <div class="w-auto items-center flex flex-col space-y-6 text-center md:text-left">
+  <div class="grid grid-cols-2 gap-6">
+    <div class="col-span-2 md:col-span-1 mx-8 sm:mx-16 space-y-2">
+        <h4 class="font-semibold text-3xl leading-relaxed">Frequently asked questions</h4>
+        <p>Can’t find the answer you’re looking for? Reach out to our support team.</p>
+    </div>
+    <div class="col-span-2 md:col-span-1 space-y-6 flex flex-col mx-8 sm:mx-16 pt-4">
+        {questions.map(item=>(
+            <div class="space-y-2">
+                <h4 class="font-semibold text-lg">{item.question}</h4>
+                <p>{item.answer}</p>
+            </div>
+        ))}
+    </div>
+  </div>
+  </div>
+</section>

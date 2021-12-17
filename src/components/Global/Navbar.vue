@@ -211,9 +211,7 @@
                 class="sub-navbar-item"
                 >Forum</a
               >
-              <a
-                href="https://github.com/community-builders"
-                class="sub-navbar-item"
+              <a href="/community-builders" class="sub-navbar-item"
                 >Builders Program</a
               >
               <a href="/community-partners" class="sub-navbar-item"
