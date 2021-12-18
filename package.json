@@ -21,8 +21,8 @@
     "snowpack-plugin-dsv": "^1.0.0",
     "tailwindcss": "^2.2.16"
   },
-  "description": "Dev Protocol's open-source website, built with Astro",
-  "repository": "https://github.com/web3community/devprotocol.xyz.git",
-  "author": "Web3Community",
+  "description": "Community Builders is open-source website, built with Astro",
+  "repository": "https://github.com/community-builders/community-builders.github-io.git",
+  "author": "Dev Protocol",
   "license": "MIT"
 }
