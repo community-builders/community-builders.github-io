@@ -1,0 +1,36 @@
+---
+const cards = [
+  {
+    title: 'Fill up the application form',
+    image: "/assets/form.svg",
+    body: 'Make sure you write your  credentials correctly.',
+    darkModeInvertColor: true
+  },
+  {
+    title: 'Submit Video Resume',
+    image: "/assets/video_resume.svg",
+    body:'You will be asked to answer the questions in the video.',
+    darkModeInvertColor: true
+  },
+  {
+    title: 'Wait for the feedback',
+    image: "/assets/feedback.svg",
+    body: 'Wait for the email to know if you are accepted.',
+    darkModeInvertColor: true
+    
+  },
+]
+---
+
+<section class="p-5 my-6 md:-mt-24">
+  <h3 class="font-black font-display text-3xl text-center">Application Process</h3>
+  <div class="grid grid-cols-3 gap-6 flex-wrap justify-evenly py-8 items-center">
+    {cards.map(card => (
+        <div class="space-y-2 col-span-3 md:col-span-1 flex flex-col items-center content-between text-center">
+        <img alt={card.title} src={card.image} class={`w-12 h-auto dark:invert`} />
+        <h3 class="font-semibold text-lg">{card.title}</h3>
+        <p>{card.body}</p>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,31 @@
+---
+const imgs = [
+  {
+    path: "/assets/badge_v2/dev_com_badge_rank1.png",
+    tag:'apprentice'
+  },
+  {
+    path: "/assets/badge_v2/dev_com_badge_rank2.png",
+    tag:'elite'
+  },
+  {
+    path: "/assets/badge_v2/dev_com_badge_rank3.png",
+    tag:'mystic'
+  },
+]
+---
+<section
+  class="
+    p-5 my-6 md:-mt-24
+  "
+>
+  <div class="w-auto items-center flex flex-col space-y-6 text-center">
+  <h3 class="font-black font-display text-3xl">Builders Milestone</h3>
+  <div class="flex flex-col space-y-6 md:space-y-0 md:space-x-14 md:flex-row mx-auto pt-4">
+    {imgs.map(img=>(
+        <img alt={img.tag} src={img.path} class={`w-48 h-auto filter`} />
+    ))}
+  </div>
+  <p class="max-w-para my-6">Each milestone have different benefits. To achieve this, you need valuable contributions to Dev Protocol.</p>
+  </div>
+</section>
