@@ -18,7 +18,7 @@ This website is live hosted at [devprotocol.xyz](https://devprotocol.xyz).
 
 ## 🚀 Get it running quick
 
-1.  Skip all of the rest steps and use Gitpod, which would automatically do all of this for you: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/web3community/devprotocol.xyz)
+1.  Skip all of the rest steps and use Gitpod, which would automatically do all of this for you: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/community-builders/community-builders.github-io)
 
 2.  Make sure you have the latest version of NodeJs Installed.
 
