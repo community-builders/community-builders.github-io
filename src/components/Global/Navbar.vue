@@ -134,10 +134,20 @@
             ></button>
             <!-- Subnavbar block -->
             <div v-if="isOpen[0]" class="sub-navbar-block">
-              <a href="/creators" class="sub-navbar-item">For Creators</a>
-              <a href="/patrons" class="sub-navbar-item">For Patrons</a>
-              <a href="/developers" class="sub-navbar-item">For Developers</a>
-              <a href="/about" class="sub-navbar-item">About</a>
+              <a href="https://devprotocol.xyz/creators" class="sub-navbar-item"
+                >For Creators</a
+              >
+              <a href="https://devprotocol.xyz/patrons" class="sub-navbar-item"
+                >For Patrons</a
+              >
+              <a
+                href="https://devprotocol.xyz/developers"
+                class="sub-navbar-item"
+                >For Developers</a
+              >
+              <a href="https://devprotocol.xyz/about" class="sub-navbar-item"
+                >About</a
+              >
               <a
                 href="https://trello.com/b/oFu5uWJF/roadmap"
                 class="sub-navbar-item"
@@ -211,10 +221,14 @@
                 class="sub-navbar-item"
                 >Forum</a
               >
-              <a href="/community-builders" class="sub-navbar-item"
+              <a
+                href="https://github.com/community-builders"
+                class="sub-navbar-item"
                 >Builders Program</a
               >
-              <a href="/community-partners" class="sub-navbar-item"
+              <a
+                href="https://devprotocol.xyz/community-partners"
+                class="sub-navbar-item"
                 >Community Partners</a
               >
             </div>
@@ -247,7 +261,9 @@
               class="navbar-item-background"
             ></button>
             <div v-if="isOpen[3]" class="sub-navbar-block">
-              <a href="/faq" class="sub-navbar-item">FAQ</a>
+              <a href="https://devprotocol.xyz/faq" class="sub-navbar-item"
+                >FAQ</a
+              >
               <a href="https://initto.devprotocol.xyz/" class="sub-navbar-item"
                 >Tutorials</a
               >
