@@ -14,7 +14,7 @@ This repository is dedicated to our community's website.
 
 ## 🤔 I want to see a deployed version
 
-This website is live hosted at [devprotocol.xyz](https://devprotocol.xyz).
+This website is live hosted at [builders.devprotocol.xyz](https://builders.devprotocol.xyz/).
 
 ## 🚀 Get it running quick
 
