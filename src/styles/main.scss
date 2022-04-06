@@ -1,0 +1,59 @@
+@use 'node_modules/@devprotocol/hashi' with (
+  $primary-dark: 'dp-blue-grey',
+  $accent: 'builder-pink',
+  $extend: (
+    'builder-pink': (
+      200: #ff85c2,
+      300: #ff43a3,
+      400: #e61780,
+      600: #860045,
+      'ink': #fff
+    )
+  )
+);
+@use 'node_modules/@devprotocol/hashi/hs-button';
+@use 'node_modules/@devprotocol/hashi/hs-link';
+@use 'syne-font-pack';
+
+@include syne-font-pack.load();
+@include hashi.init {
+  @include hs-button.render();
+  @include hs-link.render();
+  @tailwind components;
+  @tailwind utilities;
+  
+  .content-wrap {
+    width: calc(100% - 30px);
+    max-width: 1077px;
+    margin: 0 auto;
+    padding: 25px 0 35px;
+  }
+  
+  #hero-wrap {
+    width: calc(100% - 30px);
+    max-width: 1077px;
+    margin: 0 auto;
+  }
+  
+  .fill-current {
+    fill: currentColor;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
