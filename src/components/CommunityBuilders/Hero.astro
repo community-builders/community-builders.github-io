@@ -1,35 +1,36 @@
+---
+import HSButton from '../Global/HSButton.vue'
+---
+
 <section
   class="
-    mt-32
-    flex flex-col
-    items-center
-    justify-center
-    min-h-screen
-    text-center text-lg
-    lg:text-left
+    py-lg
+    pb-xl
+    bg-primary-600
+    text-primary-ink
+    text-center
     m-auto
   "
 >
-  <div class="w-auto items-center ">
-    <img
-      src="/assets/badge_v2/dev_com_badge_logo.png"
-      alt=""
-      class="max-h-64 w-auto"
-      width="900"
-      height="900"
-    />
-  </div>
-  <div class="mx-12 p-4 flex flex-col text-center items-center justify-center">
-    <h3 class="font-black font-display text-5xl lg:text-6xl mt-4">
-      Dev Protocol<br/>Community Builders
-    </h3>
-    <p class="max-w-prose my-6 text-center">
-      Community Builders are specialized groups who are eager to help the Dev Protocol ecosystem to grow, lead their community, and develop content that will help anyone to get started in blockchain, web3, and dev protocol technology.
-    </p>
-    <a href="https://forms.gle/xHbFrLC5CuCMyYcG7" class="mt-4 mx-auto">
-      <button class="bg-lightPink text-white py-2 px-6 rounded">
-        Become a Community Builder
-      </button>
-    </a>
+  <div id="hero-wrap">
+    <div class="w-auto items-center">
+      <img
+        src="/assets/badge_v2/dev_com_badge_logo.png"
+        alt=""
+        class="max-h-64 w-auto"
+        width="300"
+        height="300"
+      />
+    </div>
+    <div class="flex flex-col text-center items-center justify-center">
+      <h4 class="text-subtitle font-subtitle leading-condensed font-bold mt-md">Dev Protocol's</h4>
+      <h2 class="text-supertitle font-title leading-condensed font-black">Com&shy;munity Builders</h3>
+      <p class="max-w-prose my-sm text-center">
+        Community Builders are specialized groups who are eager to help the Dev Protocol ecosystem to grow, lead their community, and develop content that will help anyone to get started in blockchain, web3, and dev protocol technology.
+      </p>
+      <HSButton type="filled raised" link="https://forms.gle/xHbFrLC5CuCMyYcG7">
+          Become a Community Builder
+      </HSButton>
+    </div>
   </div>
 </section>
