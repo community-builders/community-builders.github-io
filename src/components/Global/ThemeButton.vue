@@ -1,61 +1,13 @@
 <template>
-  <div class="flex items-center mx-4">
-    <button
-      class="
-        w-10
-        h-5
-        md:w-12 md:h-6
-        rounded-2xl
-        bg-white
-        flex
-        items-center
-        transition
-        duration-300
-        focus:outline-none
-        shadow
-      "
-      @click="toggleDarkMode"
-    >
-      <div
-        id="switch-toggle"
-        :class="
-          isDarkMode
-            ? 'bg-gray-700 translate-x-full'
-            : 'bg-yellow-500 -translate-x-2'
-        "
-        class="
-          w-6
-          h-6
-          md:w-7 md:h-7
-          rounded-full
-          transition
-          duration-500
-          transform
-          p-1
-          text-white
-          focus:outline-none
-          select-none
-        "
-      >
-        <img
-          v-if="!isDarkMode"
-          class="invert"
-          alt="light"
-          src="/assets/light.svg"
-        />
-        <img
-          v-if="isDarkMode"
-          class="invert"
-          alt="Dark"
-          src="/assets/dark.svg"
-        />
-      </div>
-    </button>
-  </div>
+  <HSButton :icon="renderIcon()" type="filled" @click="toggleDarkMode">
+
+  </HSButton>
 </template>
 
 <script>
+import HSButton from "./HSButton.vue";
 export default {
+  components: { HSButton },
   data() {
     return {
       isDarkMode: false,
@@ -65,15 +17,34 @@ export default {
     toggleDarkMode() {
       // var checkbox = document.getElementById('#toggle')
       if (this.isDarkMode) {
-        localStorage.removeItem("theme");
         this.isDarkMode = false;
-        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+        document.querySelector('html').setAttribute('hashi-theme', 'light');
       } else {
-        document.documentElement.classList.add("dark");
         this.isDarkMode = true;
         localStorage.setItem("theme", "dark");
+        document.querySelector('html').setAttribute('hashi-theme', 'dark');
       }
     },
+    renderIcon() {
+      if (this.isDarkMode) {
+        return `
+        <img
+          v-if="isDarkMode"
+          class="invert w-[20px] h-[20px]"
+          alt="Dark"
+          src="/assets/dark.svg"
+        />`;
+      } else {
+        return `
+        <img
+          v-if="isDarkMode"
+          class="invert w-[20px] h-[20px]"
+          alt="Dark"
+          src="/assets/light.svg"
+        />`;
+      }
+    }
   },
   mounted() {
     if (
@@ -81,13 +52,15 @@ export default {
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-      document.documentElement.classList.add("dark");
       this.isDarkMode = true;
+      document.documentElement.classList.add("dark");
+      document.querySelector('html').setAttribute('hashi-theme', 'dark');
       localStorage.setItem("theme", "dark");
     } else {
-      document.documentElement.classList.remove("dark");
       this.isDarkMode = false;
-      localStorage.removeItem("theme");
+      document.querySelector('html').setAttribute('hashi-theme', 'light');
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   },
 };
