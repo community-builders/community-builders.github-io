@@ -14,18 +14,14 @@ const imgs = [
   },
 ]
 ---
-<section
-  class="
-    p-5 my-6 md:-mt-24
-  "
->
+<section class="p-lg my-lg">
   <div class="w-auto items-center flex flex-col space-y-6 text-center">
-  <h3 class="font-black font-display text-3xl">Builders Milestone</h3>
-  <div class="flex flex-col space-y-6 md:space-y-0 md:space-x-14 md:flex-row mx-auto pt-4">
-    {imgs.map(img=>(
-        <img alt={img.tag} src={img.path} class={`w-48 h-auto filter`} />
-    ))}
-  </div>
-  <p class="max-w-para my-6">Each milestone have different benefits. To achieve this, you need valuable contributions to Dev Protocol.</p>
+    <h3 class="font-bold font-title text-title text-center">Builders Milestone</h3>
+    <div class="flex flex-col gap-lg medium:space-y-0 medium:space-x-14 medium:flex-row mx-auto mt-md">
+      {imgs.map(img=>(
+          <img alt={img.tag} src={img.path} class={`w-[200px] h-auto filter`} />
+      ))}
+    </div>
+    <p class="text-subtitle leading-normal font-subtitle max-w-para my-md">Each milestone have different benefits. <br/> To achieve this, you need valuable contributions to Dev Protocol.</p>
   </div>
 </section>

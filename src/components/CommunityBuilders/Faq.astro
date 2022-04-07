@@ -23,25 +23,21 @@ const questions = [
 
 ]
 ---
-<section
-  class="
-    p-5 my-6 md:-mt-10
-  "
->
-  <div class="w-auto items-center flex flex-col space-y-6 text-center md:text-left">
-  <div class="grid grid-cols-2 gap-6">
-    <div class="col-span-2 md:col-span-1 mx-8 sm:mx-16 space-y-2">
-        <h4 class="font-semibold font-display text-3xl leading-relaxed">Frequently asked questions</h4>
-        <p>Can’t find the answer you’re looking for? Reach out to our <a href="https://discord.gg/VwJp4KM" class="underline hover:text-blue-600">support</a> team.</p>
+<section class="p-lg my-lg medium:-mt-md">
+  <div class="w-auto items-center flex flex-col space-y-sm text-center medium:text-left">
+    <div class="grid grid-cols-2 gap-lg">
+      <div class="col-span-2 medium:col-span-1 mx-8 sm:mx-16 space-y-sm">
+          <h4 class="font-bold font-title text-title leading-relaxed">Frequently asked questions</h4>
+          <p>Can’t find the answer you’re looking for? Reach out to our <a href="https://discord.gg/VwJp4KM" class="hs-link">support</a> team.</p>
+      </div>
+      <div class="col-span-2 medium:col-span-1 space-y-lg flex flex-col mx-8 sm:mx-16 pt-4">
+          {questions.map(item=>(
+              <div class="space-y-xs">
+                  <h4 class="font-bold font-subtitle text-subtitle">{item.question}</h4>
+                  <p>{item.answer}</p>
+              </div>
+          ))}
+      </div>
     </div>
-    <div class="col-span-2 md:col-span-1 space-y-6 flex flex-col mx-8 sm:mx-16 pt-4">
-        {questions.map(item=>(
-            <div class="space-y-2">
-                <h4 class="font-semibold text-lg">{item.question}</h4>
-                <p>{item.answer}</p>
-            </div>
-        ))}
-    </div>
-  </div>
   </div>
 </section>
