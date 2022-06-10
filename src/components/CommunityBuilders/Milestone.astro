@@ -1,16 +1,28 @@
 ---
 const imgs = [
   {
-    path: "/assets/badge_v2/dev_com_badge_rank1.png",
+    path: "/assets/badge_v2/apprentice.png",
     tag:'apprentice'
   },
   {
-    path: "/assets/badge_v2/dev_com_badge_rank2.png",
+    path: "/assets/badge_v2/silver.png",
+    tag:'silver'
+  },
+  {
+    path: "/assets/badge_v2/elite.png",
     tag:'elite'
   },
   {
-    path: "/assets/badge_v2/dev_com_badge_rank3.png",
+    path: "/assets/badge_v2/crystal.png",
+    tag:'crystal'
+  },
+  {
+    path: "/assets/badge_v2/mystic.png",
     tag:'mystic'
+  },
+  {
+    path: "/assets/badge_v2/stellar.png",
+    tag:'stellar'
   },
 ]
 ---
@@ -19,7 +31,7 @@ const imgs = [
     <h3 class="font-bold font-title text-title text-center">Builders Milestone</h3>
     <div class="flex flex-col gap-lg medium:space-y-0 medium:space-x-14 medium:flex-row mx-auto mt-md">
       {imgs.map(img=>(
-          <img alt={img.tag} src={img.path} class={`w-[200px] h-auto filter`} />
+          <img alt={img.tag} src={img.path} class={`w-[150px] h-auto filter`} />
       ))}
     </div>
     <p class="text-subtitle leading-normal font-subtitle max-w-para my-md">Each milestone have different benefits. <br/> To achieve this, you need valuable contributions to Dev Protocol.</p>
